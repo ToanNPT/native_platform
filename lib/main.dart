@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:test_app/MusicScreen.dart';
 
 void main() {
-  runApp(MusicPlayerScreen(
-    musicUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3',
-  ));
+  // runApp(MusicPlayerScreen(
+  //   musicUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3',
+  // ));
+  runApp(MaterialApp(home: MusicScreen()));
 }
 
 const MethodChannel _channel = MethodChannel('music_player');
